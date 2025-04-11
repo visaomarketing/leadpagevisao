@@ -13,31 +13,21 @@ body {
 
 header {
   background-color: #080C1C;
+  text-align: center;
   padding: 20px 0;
 }
 
-.topo {
-  text-align: center;
-}
-
 .logo {
-  height: 250px;
-  display: inline-block;
+  height: 50px;
 }
-
-.servicos h2 {
-  text-align: center;
-  font-size: 2rem;
-  margin-bottom: 30px;
-  color: #4FACFE;
-}
-
 
 nav ul {
-  display: flex;
-  gap: 30px;
   list-style: none;
-  justify-content: space-between;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
 }
 
 nav a {
@@ -48,7 +38,7 @@ nav a {
 
 .hero {
   text-align: center;
-  padding: 100px 20px;
+  padding: 80px 20px;
 }
 
 .gradient-text {
@@ -60,7 +50,6 @@ nav a {
 .subheadline {
   font-size: 1.2rem;
   margin: 20px 0;
-  color: #F8F8F8;
 }
 
 .btn {
@@ -70,179 +59,116 @@ nav a {
   text-decoration: none;
   font-weight: bold;
   border-radius: 8px;
+  display: inline-block;
+  margin-top: 20px;
   transition: background-color 0.3s ease;
 }
 
 .btn:hover {
-  background-color: #3998dd;
+  background-color: #3b8ddf;
 }
 
-.destaque {
-  display: inline-block;
-  margin-top: 20px;
-}
-
-.posts {
+.servicos {
   padding: 60px 20px;
+  text-align: center;
 }
 
-.posts-grid {
+.grid-servicos {
   display: flex;
   flex-wrap: wrap;
-  gap: 30px;
   justify-content: center;
+  gap: 30px;
   margin-top: 40px;
 }
 
-.post-card {
+.servico-item {
   background-color: #0D122A;
   border-radius: 16px;
   padding: 20px;
-  width: 300px;
+  width: 250px;
   text-align: center;
 }
 
-.post-card img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.post-card h3 {
-  color: #4FACFE;
-  margin-top: 15px;
-}
-
-.benefits {
-  background-color: #0D122A;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.benefits ul {
-  list-style: none;
-  padding: 0;
-  max-width: 600px;
-  margin: auto;
-  text-align: center;
-}
-
-.benefits li {
-  padding: 10px 0;
-  font-size: 1.1rem;
-}
-
-.depoimentos {
-  padding: 60px 20px;
-  background-color: #080C1C;
-  text-align: center;
-}
-
-.depoimentos blockquote {
-  font-style: italic;
-  font-size: 1.2rem;
-  max-width: 600px;
-  margin: auto;
-  position: relative;
-}
-
-.depoimentos span {
-  display: block;
-  margin-top: 15px;
-  color: #4FACFE;
-}
-
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #0D122A;
-  font-size: 0.9rem;
-}
-.cta-sec {
-  text-align: center;
-  padding: 60px 20px;
-  background-color: #0D122A;
-}
-
-/* Seção Missão Visão Valores */
-.institucional {
-  padding: 60px 20px;
-  text-align: center;
-  background-color: #080C1C;
-}
-
-.institucional-grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 40px;
-}
-
-.institucional .card {
-  background-color: #0D122A;
-  border-radius: 16px;
-  padding: 30px 20px;
-  width: 300px;
-  box-shadow: 0 0 10px rgba(79, 172, 254, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  color: #F8F8F8;
-  text-align: center;
-}
-
-.sobre {
-  background-color: #080C1C;
-  padding: 60px 20px;
-  text-align: center;
-}
-
-.cards-mvv {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 40px;
-}
-
-.card-mvv {
-  background-color: #0D122A;
-  border-radius: 16px;
-  padding: 30px 20px;
-  width: 300px;
-  box-shadow: 0 0 10px rgba(79, 172, 254, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card-mvv:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 20px rgba(79, 172, 254, 0.3);
-}
-
-.card-mvv img {
-  width: 50px;
+.servico-item img {
+  width: 60px;
   margin-bottom: 15px;
 }
 
-.card-mvv h3 {
+.servico-item h3 {
   color: #4FACFE;
   margin-bottom: 10px;
-  font-size: 1.4rem;
 }
 
-.card-mvv p {
-  font-size: 1rem;
-  line-height: 1.5;
+.prova-social {
+  background-color: #0D122A;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.depoimentos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.card-depo {
+  background-color: #080C1C;
+  padding: 20px;
+  border-radius: 12px;
+  width: 300px;
+}
+
+.card-depo img.foto-depo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.prints img {
+  width: 250px;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+.sobre {
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.cta-sec {
+  background-color: #0D122A;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: #080C1C;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #8CE7FE;
+  text-decoration: none;
+}
+
+.redes {
+  margin: 10px 0;
 }
 
 /* Responsivo */
 @media (max-width: 768px) {
-  .posts-grid,
-  .cards-mvv {
+  .grid-servicos,
+  .depoimentos {
     flex-direction: column;
     align-items: center;
   }
 
   nav ul {
     flex-direction: column;
-    align-items: flex-start;
   }
 }
